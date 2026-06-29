@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c445229279670cc4bbf3336544e8f7f3, type: 3}
+  m_Name: Chloe_Ability_Node
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterAbilityTreeSO
+  nodes:
+  - nodeId: c_tier1_dm
+    tier: 1
+    nodeNameKey: c_tier1_dm_name
+    description: c_tier1_dm_desc
+    icon: {fileID: 0}
+    targetStat: 0
+    valuePerLevel: 0.1
+    maxLevel: 3
+    grantTag: 0
+    position: {x: -200, y: 100}
+    parents: []
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier1_as
+    tier: 1
+    nodeNameKey: c_tier1_as_name
+    description: c_tier1_as_desc
+    icon: {fileID: 0}
+    targetStat: 6
+    valuePerLevel: 5
+    maxLevel: 3
+    grantTag: 0
+    position: {x: 0, y: 100}
+    parents: []
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier1_pr
+    tier: 1
+    nodeNameKey: c_tier1_pr_name
+    description: c_tier1_pr_desc
+    icon: {fileID: 0}
+    targetStat: 39
+    valuePerLevel: 1
+    maxLevel: 3
+    grantTag: 0
+    position: {x: 200, y: 100}
+    parents: []
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier2_hp
+    tier: 2
+    nodeNameKey: c_tier2_hp_name
+    description: c_tier2_hp_desc
+    icon: {fileID: 0}
+    targetStat: 42
+    valuePerLevel: 20
+    maxLevel: 3
+    grantTag: 0
+    position: {x: -200, y: 250}
+    parents:
+    - c_tier1_dm
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier2_sh
+    tier: 2
+    nodeNameKey: c_tier2_sh_name
+    description: c_tier2_sh_desc
+    icon: {fileID: 0}
+    targetStat: 45
+    valuePerLevel: 20
+    maxLevel: 3
+    grantTag: 0
+    position: {x: 0, y: 250}
+    parents:
+    - c_tier1_as
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier2_ws
+    tier: 2
+    nodeNameKey: c_tier2_ws_name
+    description: c_tier2_ws_desc
+    icon: {fileID: 0}
+    targetStat: 51
+    valuePerLevel: 1
+    maxLevel: 1
+    grantTag: 0
+    position: {x: 200, y: 250}
+    parents:
+    - c_tier1_pr
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier3_cc
+    tier: 3
+    nodeNameKey: c_tier3_cc_name
+    description: c_tier3_cc_desc
+    icon: {fileID: 0}
+    targetStat: 4
+    valuePerLevel: 10
+    maxLevel: 3
+    grantTag: 0
+    position: {x: -200, y: 400}
+    parents:
+    - c_tier2_hp
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier3_cd
+    tier: 3
+    nodeNameKey: c_tier3_cd_name
+    description: c_tier3_cd_desc
+    icon: {fileID: 0}
+    targetStat: 5
+    valuePerLevel: 0.2
+    maxLevel: 3
+    grantTag: 0
+    position: {x: 0, y: 400}
+    parents:
+    - c_tier2_sh
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier3_ws
+    tier: 3
+    nodeNameKey: c_tier3_ws_name
+    description: c_tier3_ws_desc
+    icon: {fileID: 0}
+    targetStat: 51
+    valuePerLevel: 1
+    maxLevel: 1
+    grantTag: 0
+    position: {x: 200, y: 400}
+    parents:
+    - c_tier2_ws
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier4_wd
+    tier: 4
+    nodeNameKey: c_tier4_wd_name
+    description: c_tier4_wd_desc
+    icon: {fileID: 0}
+    targetStat: 0
+    valuePerLevel: 0.2
+    maxLevel: 3
+    grantTag: 25
+    position: {x: -200, y: 550}
+    parents:
+    - c_tier3_cc
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier4_ws
+    tier: 4
+    nodeNameKey: c_tier4_ws_name
+    description: c_tier4_ws_desc
+    icon: {fileID: 0}
+    targetStat: 6
+    valuePerLevel: 10
+    maxLevel: 3
+    grantTag: 25
+    position: {x: 0, y: 550}
+    parents:
+    - c_tier3_cd
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier4_ed
+    tier: 4
+    nodeNameKey: c_tier4_ed_name
+    description: c_tier4_ed_desc
+    icon: {fileID: 0}
+    targetStat: 21
+    valuePerLevel: 0.2
+    maxLevel: 3
+    grantTag: 25
+    position: {x: 200, y: 550}
+    parents:
+    - c_tier3_ws
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier5_sh
+    tier: 5
+    nodeNameKey: c_tier5_sh_name
+    description: c_tier5_sh_desc
+    icon: {fileID: 0}
+    targetStat: 45
+    valuePerLevel: 20
+    maxLevel: 3
+    grantTag: 0
+    position: {x: 0, y: 700}
+    parents:
+    - c_tier4_ws
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier5_bc
+    tier: 5
+    nodeNameKey: c_tier5_bc_name
+    description: c_tier5_bc_desc
+    icon: {fileID: 0}
+    targetStat: 8
+    valuePerLevel: 1
+    maxLevel: 1
+    grantTag: 25
+    position: {x: 200, y: 700}
+    parents:
+    - c_tier4_ed
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []
+  - nodeId: c_tier5_bc
+    tier: 5
+    nodeNameKey: c_tier5_bc_name
+    description: c_tier5_hp_desc
+    icon: {fileID: 0}
+    targetStat: 8
+    valuePerLevel: 1
+    maxLevel: 1
+    grantTag: 26
+    position: {x: 200, y: 700}
+    parents:
+    - c_tier4_wd
+    exclusiveWith: 
+    prerequisiteNodes: []
+    exclusiveNodes: []

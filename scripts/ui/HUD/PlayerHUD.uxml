@@ -1,0 +1,41 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_UI/HUD/PlayerHUD.uss?fileID=7433441132597879392&amp;guid=dea58a5fa6093c64bb7410732348f4d9&amp;type=3#PlayerHUD" />
+    <ui:VisualElement name="hud-root" class="hud-root" style="flex-grow: 1;">
+        <ui:VisualElement name="hud-container" class="hud-main-container" style="flex-grow: 0; flex-shrink: 0; align-self: auto; align-items: flex-start;">
+            <ui:VisualElement name="player-portrait" class="portrait-style" style="flex-grow: 0; flex-shrink: 0;" />
+            <ui:VisualElement name="info-container" class="info-layout" style="flex-grow: 0; flex-shrink: 0;">
+                <ui:VisualElement name="text-row" class="text-row" style="flex-grow: 0; flex-shrink: 0; align-self: flex-start; align-content: flex-start; align-items: center;">
+                    <ui:Label text="Label" name="hp-text" class="hp-text" />
+                    <ui:Label text="Label" name="shield-text" class="shield-text" />
+                </ui:VisualElement>
+                <ui:VisualElement name="hp-bar-bg" class="bar-bg" style="flex-grow: 1; -unity-text-align: middle-left;">
+                    <ui:VisualElement name="hp-bar-fill" class="hp-fill" style="flex-grow: 0; flex-shrink: 0;" />
+                    <ui:VisualElement name="shield-bar-fill" class="shield-fill" style="flex-grow: 0; flex-shrink: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="xp-container" class="xp-container" style="flex-grow: 1;">
+            <ui:VisualElement name="xp-bar-bg" class="xp-bar-bg" style="flex-grow: 1; justify-content: center; align-items: center; align-content: auto; align-self: center; font-size: 12px; -unity-text-align: middle-center;">
+                <ui:VisualElement name="xp-bar-fill" class="xp-fill" style="flex-grow: 0; color: rgb(56, 56, 56); flex-shrink: 0; flex-direction: column; align-items: auto; -unity-text-align: upper-center;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label text="Label" name="xp-text" class="xp-text" style="align-items: center; align-self: center; align-content: center; justify-content: flex-start; font-size: 14px; -unity-text-align: middle-center;" />
+        <ui:VisualElement name="gold-container" class="gold-container" style="flex-grow: 1; -unity-text-align: upper-left;">
+            <ui:VisualElement name="hud-info-group" class="hud-info-group" style="flex-grow: 0; flex-shrink: 0;">
+                <ui:VisualElement name="gold-icon" class="gold-icon" style="flex-grow: 0; -unity-text-align: middle-left; flex-shrink: 0;" />
+                <ui:Label text="Label" name="gold-text" class="gold-text" style="justify-content: flex-start; align-content: auto; -unity-text-align: middle-left;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="hud-info-group" class="hud-info-group" style="flex-grow: 0; -unity-text-align: upper-left; flex-shrink: 0;">
+                <ui:Label text="Label" name="time-text" class="time-text" style="-unity-text-align: middle-left;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="hud-info-group" class="hud-info-group" style="flex-grow: 0; flex-shrink: 0;">
+                <ui:Label text="Label" name="kill-text" class="kill-text" style="-unity-text-align: middle-left;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="active-tag-list" style="flex-grow: 1;" />
+        <ui:VisualElement name="active-item-list" style="flex-grow: 1;" />
+        <ui:VisualElement name="interaction-prompt" style="position: absolute; display: none; background-color: rgba(50, 50, 50, 0.7); border-radius: 8px; padding: 10px 20px; align-items: center; justify-content: center;">
+            <ui:Label name="interaction-text" text="E를 눌러 상호작용" style="color: white; font-size: 24px; -unity-font-style: bold; margin: 0; padding: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
