@@ -1,0 +1,92 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_UI/Upgrade/Upgrade.uss?fileID=7433441132597879392&amp;guid=98151ddc363be7a4bbe2f70f9bff6a56&amp;type=3#Upgrade" />
+    <ui:VisualElement name="screen-root" class="fullscreen-overlay" style="flex-grow: 1;">
+        <ui:VisualElement name="main-container" class="main-horizontal-layout" style="flex-grow: 1;">
+            <ui:VisualElement name="left-panel" class="panel-side" style="flex-grow: 0; flex-shrink: 0;">
+                <ui:Label text="CHARACTER" name="ui_title_character" class="label-title" />
+                <ui:VisualElement name="char-info-container" class="char-info-layout" style="flex-grow: 0; flex-shrink: 0;">
+                    <ui:VisualElement name="char-portrait" class="char-portrait-style" style="flex-grow: 0;" />
+                    <ui:VisualElement name="char-class" class="char-sub-text" style="flex-grow: 0; flex-shrink: 0;">
+                        <ui:Label text="Label" name="char_LV" style="font-size: 24px; -unity-font-style: bold;" />
+                        <ui:Label text="Label" name="char-class" style="font-size: 24px; -unity-font-style: bold;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Line" class="horizontal-rule" style="flex-grow: 0; flex-shrink: 0;" />
+                <ui:Label text="TAG" name="ui_title_character" class="label-title" />
+                <ui:ScrollView name="synergy-scroll" class="scroll-view-style" />
+                <ui:VisualElement name="synergy-detail-panel" class="synergy-detail-panel" style="flex-grow: 1;" />
+                <ui:VisualElement name="Line" class="horizontal-rule" style="flex-grow: 0; flex-shrink: 0;" />
+                <ui:Label text="WEAPON" name="ui_subtitle_weapons" class="label-title" />
+                <ui:VisualElement name="weapon-container" class="slot-group" style="flex-grow: 0; flex-shrink: 0;">
+                    <ui:VisualElement name="weapon-slot-0" class="weapon-slot" style="flex-grow: 0;" />
+                    <ui:VisualElement name="weapon-slot-1" class="weapon-slot" style="flex-grow: 0;" />
+                    <ui:VisualElement name="weapon-slot-2" class="weapon-slot" style="flex-grow: 0;" />
+                    <ui:VisualElement name="weapon-slot-3" class="weapon-slot" style="flex-grow: 0;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Line" class="horizontal-rule" style="flex-grow: 0; flex-shrink: 0;" />
+                <ui:Label text="CORE" name="CORES" class="label-title" />
+                <ui:VisualElement name="ui_subtitle_cores" class="slot-group" style="flex-grow: 0; flex-shrink: 0;">
+                    <ui:VisualElement name="core-slot-0" class="weapon-slot" style="flex-grow: 0;" />
+                    <ui:VisualElement name="core-slot-1" class="weapon-slot" style="flex-grow: 0;" />
+                    <ui:VisualElement name="core-slot-2" class="weapon-slot" style="flex-grow: 0;" />
+                    <ui:VisualElement name="core-slot-3" class="weapon-slot" style="flex-grow: 0;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Line" class="horizontal-rule" style="flex-grow: 0; flex-shrink: 0;" />
+                <ui:Label text="ITEM" name="ui_subtitle_items" class="label-title" />
+                <ui:ScrollView name="item-container" class="scroll-view-style">
+                    <ui:VisualElement name="item-container" class="item-grid-layout" style="flex-grow: 1;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+            <ui:VisualElement name="center-panel" class="panel-center" style="flex-grow: 1; flex-shrink: 0;">
+                <ui:VisualElement name="selection-list" class="selection-container" style="flex-grow: 1; flex-shrink: 1; justify-content: center; align-self: auto; align-content: auto; max-width: 1200px;">
+                    <ui:VisualElement name="upgrade-header-row" class="upgrade-header-row" style="flex-grow: 0; flex-shrink: 1; align-self: stretch;">
+                        <ui:Label text="UPGRADE" name="ui_title_upgrade" class="label-title" />
+                        <ui:Label text="100G" name="current-gold-label" class="gold-display-text" />
+                    </ui:VisualElement>
+                    <ui:Button text="&#10;" name="option-0" class="upgrade-card" style="flex-basis: auto; align-items: stretch; align-self: stretch; white-space: nowrap; flex-grow: 0; flex-shrink: 1;">
+                        <ui:Label text="Tier X" name="tier-label" class="tier-text" style="-unity-text-align: middle-left;" />
+                        <ui:VisualElement name="stat-info-container" class="stat-info-container" style="flex-grow: 1; flex-shrink: 1;">
+                            <ui:Label text="• Damage +15" name="stat-text-1" class="stat-text text-level-info" style="-unity-text-align: middle-left;" />
+                            <ui:Label text="• Attack Speed +10%" name="stat-text-2" class="stat-text stat-text-2" style="-unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button text="Button" name="option-1" class="upgrade-card" style="flex-grow: 0; flex-shrink: 1;">
+                        <ui:Label text="Tier X" name="tier-label" class="tier-text" style="-unity-text-align: middle-left;" />
+                        <ui:VisualElement name="stat-info-container" class="stat-info-container" style="flex-grow: 1; flex-shrink: 0;">
+                            <ui:Label text="• Damage +15" name="stat-text-1" class="stat-text text-level-info" style="-unity-text-align: middle-left;" />
+                            <ui:Label text="• Attack Speed +10%" name="stat-text-2" class="stat-text stat-text-2" style="-unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button text="Button" name="option-2" class="upgrade-card" style="flex-grow: 0; flex-shrink: 1;">
+                        <ui:Label text="Tier X" name="tier-label" class="tier-text" style="-unity-text-align: middle-left;" />
+                        <ui:VisualElement name="stat-info-container" class="stat-info-container" style="flex-grow: 1; flex-shrink: 0;">
+                            <ui:Label text="• Damage +15" name="stat-text-1" class="stat-text text-level-info" style="-unity-text-align: middle-left;" />
+                            <ui:Label text="• Attack Speed +10%" name="stat-text-2" class="stat-text stat-text-2" style="-unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:VisualElement name="reroll-wrapper" class="reroll-wrapper" style="flex-grow: 0; width: auto; position: relative; align-content: flex-end; flex-shrink: 1; flex-direction: row; align-self: stretch;">
+                        <ui:Button name="reroll-button" class="reroll-button-style">
+                            <ui:VisualElement name="reroll-icon" class="reroll-icon" style="flex-grow: 1;" />
+                            <ui:Label text="새로 고침 : 100G" name="reroll-cost-label" class="reroll-cost-label" />
+                        </ui:Button>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="right-panel" style="flex-grow: 1; flex-shrink: 0;">
+                <ui:Label text="DETAILED STATS" name="ui_title_stats" class="label-title" style="-unity-text-align: upper-right;" />
+                <ui:ScrollView name="stat-list" class="scroll-view-style stat-sheet-container" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="weapon-inspector" class="weapon-inspector-container" style="flex-grow: 0; width: 0; flex-shrink: 0;">
+            <ui:Label text="WEAPON NAME" name="inspector-name" class="inspector-title" style="-unity-text-align: middle-left;" />
+            <ui:VisualElement name="inspector-stats-wrapper" class="inspector-stats-wrapper" style="flex-grow: 1;">
+                <ui:VisualElement name="inspector-base-stats" class="inspector-column" style="flex-grow: 1;">
+                    <ui:VisualElement name="base-stat-list" style="flex-grow: 1;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="inspector-special-stats" class="inspector-column" style="flex-grow: 1;">
+                    <ui:VisualElement name="special-stat-list" style="flex-grow: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
