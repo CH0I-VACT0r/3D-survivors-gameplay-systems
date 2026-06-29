@@ -4,6 +4,10 @@ Modular gameplay systems for a Unity 3D Survivors game, including combat, weapon
 The original Unity project remains private because it contains collaborative work and proprietary assets.
 This repository showcases only the gameplay systems and source code that I personally developed, along with demonstration videos.
 
+## Full Gameplay Demo
+▶ https://youtu.be/zZ7PVjA1bSQ
+
+
 ## Weapon Framework
 
 One of the primary goals of this project was to build a scalable weapon framework that allows designers and developers to create new weapons with minimal implementation effort.
