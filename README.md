@@ -43,10 +43,10 @@ This separation allows individual components to be reused across multiple weapon
 
 ### Rapid Weapon Creation
 
-<img src="demo/weapon-creation.gif" width="400">
+<img src="demo/weapon-creation.gif" width="1000">
 *Figure. Component-based weapon architecture used to configure and extend new weapon types.*
 
-<img src="demo/weapon-component.png" width="400">
+<img src="demo/weapon-component.png" width="600">
 
 New weapons can be created by duplicating an existing `WeaponData` asset, assigning a projectile prefab, and adjusting configuration values in the Inspector.
 No changes to the core weapon framework are required, allowing new gameplay content to be added quickly while preserving maintainability.
