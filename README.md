@@ -7,6 +7,7 @@ This repository showcases only the gameplay systems and source code that I perso
 ## Full Gameplay Demo
 Demo Video 1
 ▶ https://youtu.be/zZ7PVjA1bSQ
+
 Demo Video 2
 ▶ https://youtu.be/YGm99Whnb28
 
