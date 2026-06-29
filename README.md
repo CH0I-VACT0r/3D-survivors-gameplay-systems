@@ -15,7 +15,7 @@ This architecture enables rapid weapon prototyping while reducing duplicated cod
 ### Architecture
 
 <p align="center">
-    <img src="docs/weapon-component.png" width="900">
+    <img src="demo/weapon-component.png" width="900">
 </p>
 
 The weapon pipeline is organized as follows:
@@ -49,7 +49,7 @@ This separation allows individual components to be reused across multiple weapon
 ### Rapid Weapon Creation
 
 <p align="center">
-    <img src="docs/weapon-creation.gif" width="900">
+    <img src="demo/weapon-creation.gif" width="900">
 </p>
 *Figure. Component-based weapon architecture used to configure and extend new weapon types.*
 
