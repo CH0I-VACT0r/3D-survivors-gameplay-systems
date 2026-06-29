@@ -1,0 +1,1 @@
+public enum StatusType { None, Impact, Burn, Freeze, Electric, Poison }
